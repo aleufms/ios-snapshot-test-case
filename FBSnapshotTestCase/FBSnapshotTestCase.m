@@ -79,4 +79,14 @@
                                                      error:errorPtr];
 }
 
+- (void) snapshotVerifyView:(UIView *)view withIdentifier:(NSString *)identifier
+{
+    FBSnapshotVerifyView(view, identifier);
+}
+
+- (void) snapshotVerifyLayer:(CALayer *)layer withIdentifier:(NSString *)identifier
+{
+    FBSnapshotVerifyLayer(layer, identifier);
+}
+
 @end
